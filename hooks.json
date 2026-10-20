@@ -1,0 +1,26 @@
+{
+  "SessionStart": [
+    {
+      "matcher": "",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "python3 \"${DEVIN_PLUGIN_ROOT:-${CLAUDE_PLUGIN_ROOT}}/scripts/hook_runner.py\" session-start",
+          "timeout": 6
+        }
+      ]
+    }
+  ],
+  "UserPromptSubmit": [
+    {
+      "matcher": "",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "python3 \"${DEVIN_PLUGIN_ROOT:-${CLAUDE_PLUGIN_ROOT}}/scripts/hook_runner.py\" prompt-submit",
+          "timeout": 5
+        }
+      ]
+    }
+  ]
+}
