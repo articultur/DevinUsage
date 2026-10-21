@@ -8,6 +8,12 @@
   },
   "repository": "https://github.com/articultur/DevinUsage",
   "license": "MIT",
+  "mcpServers": {
+    "paths": [
+      ".devin-plugin/mcp.json"
+    ],
+    "exclusive": true
+  },
   "keywords": [
     "devin",
     "quota",
